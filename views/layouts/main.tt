@@ -13,6 +13,11 @@
 </head>
 <body>
 <% IF session.user %>
+	<a href="/users/<% session.user %>">Профиль</a>
+	<a href="/users">Список пользователей</a>
+	<a href="/albums/new">Новый альбом</a>
+	<a href="/tracks/new">Новый трек</a>
+	<a href="/parser">Парсер</a>
 	<a href="/logout">Выйти</a>
 <% ELSE %>
 	<a href="/login">Войти</a>
