@@ -1,4 +1,17 @@
 <h1>Профиль</h1>
-<p><b>Логин:</b> <% login %></p>
-
-
+<p><b>Логин:</b> <% user.login %></p>
+<h2>Альбомы:</h2>
+<table>
+	<tr>
+		<th>Альбом</th>
+		<th>Группа</th>
+		<th>Год</th>
+   	</tr>
+	<% for album in user.albums %>
+		<tr>
+			<td><a href="/albums/<% album.id %>"><% album.album %></a></td>
+			<td><% album.group %></td>
+			<td>><% album.year %></td>
+		</tr>
+	<% end %>
+</table>

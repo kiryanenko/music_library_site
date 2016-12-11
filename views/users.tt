@@ -1,0 +1,8 @@
+<h1>Пользователи</h1>
+<ol>
+	<% for user in users %>
+		<li><a href="/users/<% user.id %>"><% user.login %></a></li>
+	<% end %>
+</ol>
+
+

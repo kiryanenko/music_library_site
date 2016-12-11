@@ -1,0 +1,19 @@
+<h1>Альбом</h1>
+<p><b>Альбом:</b> <% album.login %></p>
+<p><b>Группа:</b> <% album.group %></p>
+<p><b>Год:</b> <% album.year %></p>
+<h2>Треки:</h2>
+<table>
+	<tr>
+		<th>Картинка</th>
+		<th>Название трека</th>
+		<th>Формат</th>
+   	</tr>
+	<% for track in album.tracks %>
+		<tr>
+			<td><img src="<% track.image %>"></td>
+			<td><a href="/tracks/<% track.id %>"><% track.track %></a></td>
+			<td><% track.format %></td>
+		</tr>
+	<% end %>
+</table>
