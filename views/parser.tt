@@ -1,0 +1,7 @@
+<h1>Парсер</h1>
+
+<form action="/parse" method="POST">
+	<textarea name="table"><% table %></textarea><br>
+	<button type="submit">Выполнить</button>
+</form>
+

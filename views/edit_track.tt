@@ -1,0 +1,20 @@
+<h1>Редактирование трека</h1>
+
+<form action="/tracks/<% track.id %>" method="POST">
+	<label>Трек</label>
+	<input type="text" name="track" value="<% track.track %>"><br>
+	<label>Формат</label>
+	<input type="text" name="format" value="<% track.format %>"><br>
+	<label>Альбом</label>
+	<select name="album" value="<% track.album %>">
+		<% for album in albums %>
+			<option value="<% album.id %>"><% album.album %></option>
+		<% end %>
+	</select><br>
+	<label>URL картинки</label>
+	<input type="text" name="image" value="<% track.image %>"><br>
+	<label>или загрузить</label>
+	<input type="file" name="image_file"><br>
+	<button type="submit">Изменить</button>
+</form>
+

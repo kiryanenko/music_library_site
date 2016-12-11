@@ -10,7 +10,7 @@
 	<% for album in user.albums %>
 		<tr>
 			<td><a href="/albums/<% album.id %>"><% album.album %></a></td>
-			<td><% album.group %></td>
+			<td><% album.band %></td>
 			<td>><% album.year %></td>
 		</tr>
 	<% end %>

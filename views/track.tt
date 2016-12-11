@@ -1,0 +1,7 @@
+<h1>Трек</h1>
+<% if track.image %><img src="<% track.image %>"></img><% end %>
+<p><b>Трек:</b> <% track.track %></p>
+<p><b>Формат:</b> <% track.format %></p>
+<p><b>Альбом:</b> <% track.album.album %></p>
+
+<a href="/tracks/<% track.id %>/edit">Изменить</a>
