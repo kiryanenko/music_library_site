@@ -2,6 +2,7 @@ package MusicLibrary;
 use Dancer ':syntax';
 use Dancer::Plugin::DBIC qw(schema resultset rset);
 use DDP;
+use utf8;
 
 BEGIN{
 	if ($] < 5.018) {
